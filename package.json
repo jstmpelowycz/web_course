@@ -7,16 +7,24 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.11.65",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "dotenv": "^16.0.3",
+    "eslint": "8.22.0",
+    "express": "^4.18.2",
+    "faker": "^6.6.6",
+    "mongodb": "^4.10.0",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.8.4",
+    "sequelize": "^6.25.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "dev": "tsnd --respawn ./src/index.ts",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +47,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.4",
+    "sequelize-cli": "^6.5.1",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
