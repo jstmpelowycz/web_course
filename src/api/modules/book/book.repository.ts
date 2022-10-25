@@ -3,7 +3,7 @@ import {Maybe} from "../../../app";
 import {Repository} from "../repository";
 import {Book, BookError, CreateBookFields} from "./book.typedefs";
 
-export class BookRepository extends Repository {
+export class BookRepository extends Repository<Book> {
   public async getByPk(id: number): Promise<Book | never> {
     const book = await this.findByPk(id);
 
@@ -33,7 +33,7 @@ export class BookRepository extends Repository {
       returning: true,
     });
 
-    return this.getPlain<Book>(book);
+    return this.getPlain(book);
   }
 
   public async getAllByAuthorId(authorId: string): Promise<Book[]> {
@@ -43,13 +43,13 @@ export class BookRepository extends Repository {
       }
     });
 
-    return books.map(this.getPlain<Book>);
+    return books.map(this.getPlain);
   }
 
   private async findByPk(id: number): Promise<Maybe<Book>> {
     const book = await db.Book.findByPk(id);
 
-    return this.getPlain<Book>(book);
+    return this.getPlain(book);
   }
 
   private async findByTitle(title: string): Promise<Maybe<Book>> {
@@ -60,6 +60,6 @@ export class BookRepository extends Repository {
       },
     });
 
-    return this.getPlain<Book>(book);
+    return this.getPlain(book);
   }
 }

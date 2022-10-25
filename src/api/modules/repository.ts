@@ -1,8 +1,8 @@
 import {Model} from "sequelize";
 import {AnyObject} from "../../app";
 
-export class Repository {
-  protected getPlain<T extends {} = any>(object: Model<T, T>): T {
+export class Repository<M extends {} = any> {
+  protected getPlain(object: Model<M, M>): M {
     return object.get({
       plain: true,
     });

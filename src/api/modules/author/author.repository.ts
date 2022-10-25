@@ -3,7 +3,7 @@ import {Maybe} from "../../../app";
 import {Repository} from "../repository";
 import {Author, AuthorError, CreateAuthorFields, UpdateAuthorFields} from "./author.typedefs";
 
-export class AuthorRepository extends Repository {
+export class AuthorRepository extends Repository<Author> {
   public async getByPk(id: string): Promise<Author | never> {
     const author = await this.findByPk(id);
 
@@ -33,7 +33,7 @@ export class AuthorRepository extends Repository {
       returning: true,
     });
 
-    return this.getPlain<Author>(author);
+    return this.getPlain(author);
   }
 
   public async update(id: string, fields: UpdateAuthorFields): Promise<number> {
@@ -49,7 +49,7 @@ export class AuthorRepository extends Repository {
   private async findByPk(id: string): Promise<Maybe<Author>> {
     const author = await db.Author.findByPk(id);
 
-    return this.getPlain<Author>(author);
+    return this.getPlain(author);
   }
 
   private async findByEmail(email: string): Promise<Maybe<Author>> {
@@ -60,6 +60,6 @@ export class AuthorRepository extends Repository {
       },
     });
 
-    return this.getPlain<Author>(author);
+    return this.getPlain(author);
   }
 }
