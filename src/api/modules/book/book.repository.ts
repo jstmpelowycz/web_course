@@ -47,7 +47,9 @@ export class BookRepository extends Repository {
   }
 
   private async findByPk(id: number): Promise<Maybe<Book>> {
-    return await db.Book.findByPk(id) as Maybe<Book>;
+    const book = await db.Book.findByPk(id);
+
+    return this.getPlain<Book>(book);
   }
 
   private async findByTitle(title: string): Promise<Maybe<Book>> {

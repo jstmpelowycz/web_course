@@ -23,3 +23,15 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 /.env
+/.idea/dataSources/aaf2d7f3-e117-43f6-bf3b-10308b56b67b.xml
+/.idea/dataSources.local.xml
+/.idea/dataSources/aaf2d7f3-e117-43f6-bf3b-10308b56b67b/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta
+/.idea/dataSources/aaf2d7f3-e117-43f6-bf3b-10308b56b67b/storage_v2/_src_/database/web.VMsBAA/schema/information_schema.FNRwLQ.meta
+/.idea/jsLibraryMappings.xml
+/.idea/dataSources/aaf2d7f3-e117-43f6-bf3b-10308b56b67b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta
+/.idea/dataSources/aaf2d7f3-e117-43f6-bf3b-10308b56b67b/storage_v2/_src_/database/web.VMsBAA/schema/pg_catalog.0S1ZNQ.meta
+/.idea/dataSources/aaf2d7f3-e117-43f6-bf3b-10308b56b67b/storage_v2/_src_/database/postgres.edMnLQ.meta
+/.idea/dataSources/aaf2d7f3-e117-43f6-bf3b-10308b56b67b/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta
+/.idea/dataSources/aaf2d7f3-e117-43f6-bf3b-10308b56b67b/storage_v2/_src_/database/web.VMsBAA/schema/public.abK9xQ.meta
+/.idea/sqldialects.xml
+/.idea/dataSources/aaf2d7f3-e117-43f6-bf3b-10308b56b67b/storage_v2/_src_/database/web.VMsBAA.meta
