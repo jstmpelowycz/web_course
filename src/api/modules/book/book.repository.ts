@@ -1,6 +1,6 @@
 import db from "../../models";
 import {Maybe} from "../../../app";
-import {Repository} from "../repository";
+import {Repository} from "../../utils/repository";
 import {Book, BookError, CreateBookFields} from "./book.typedefs";
 
 export class BookRepository extends Repository<Book> {

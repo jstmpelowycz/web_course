@@ -1,6 +1,6 @@
 import db from "../../models";
 import {Maybe} from "../../../app";
-import {Repository} from "../repository";
+import {Repository} from "../../utils/repository";
 import {Author, AuthorError, CreateAuthorFields, UpdateAuthorFields} from "./author.typedefs";
 
 export class AuthorRepository extends Repository<Author> {
